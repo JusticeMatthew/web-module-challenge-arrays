@@ -157,10 +157,15 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord(array, flavor) {
+    let newArray = [];
+    for (let i = 0; i < array.length; i++) { 
+        if (array[i].includes(flavor)) {
+            newArray.push(array[i]);    
+        }        
+    }
+    return newArray;
 }
-
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
